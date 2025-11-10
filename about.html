@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&family=Merriweather:wght@300;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to top, rgb(251, 251, 244), rgb(234, 241, 244), rgb(244, 235, 231), rgb(242, 244, 242));
+      font-family: "Oswald", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      gap: 30px;
+    }
+
+    img {
+      width: 500px;
+      height: 600px;
+      border-radius: 10px;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+    }
+
+    img:hover {
+      opacity: 1;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h2 {
+      text-decoration: underline;
+      font-size: 36px;
+      color: rgb(70, 209, 10);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px;
+      color: rgb(156, 13, 227);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: rgb(241, 144, 9);
+    }
+
+    .highlight2 {
+      color: rgb(10, 54, 200);
+    }
+
+    /* 🌐 Responsive design */
+
+    /* For tablets */
+    @media screen and (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      img {
+        width: 80%;
+        height: auto;
+      }
+      p {
+        font-size: 18px;
+        margin: 10px;
+      }
+    }
+
+    /* For mobile screens */
+    @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./rajesh.jpeg" alt="Profile Picture">
+
+    <div class="content">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong class="highlight">Madigubba Rajesh</strong>, a dedicated tech enthusiast from <strong class="highlight">Anantapur, Andhra Pradesh</strong>. 
+      I enjoy exploring the intersection of intelligent systems and full-stack development. My passion lies in solving real-world problems through clean code, creative thinking, and data-driven logic.</p>
+
+      <p>Throughout my academic journey and internships, I’ve worked on meaningful projects — from disease prediction using machine learning to creating user-friendly web applications. 
+      These experiences taught me how to turn ideas into working solutions.</p>
+
+      <p>I’m skilled in frontend and backend technologies like <strong class="highlight2">Python, HTML, CSS, JavaScript, React.js, and Node.js</strong>, along with ML tools such as <strong>Pandas</strong> and <strong>Scikit-learn</strong>.
+      I believe in being consistent, curious, and committed to continuous learning. My goal is to become a strong software engineer who builds impactful and intelligent applications that make a real difference.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: rgb(63, 63, 63);
+      color: white;
+    }
+
+    /* Navbar */
+    .nav {
+      width: 100%;
+      height: 60px;
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 4px rgb(107, 107, 215);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .links {
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: blue;
+      margin: 0 15px;
+    }
+
+    .links a:hover {
+      color: red;
+    }
+
+    /* Main Body */
+    .body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding-top: 100px; /* Prevent overlap with fixed navbar */
+    }
+
+    .body img {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.6s ease;
+    }
+
+    .body img:hover {
+      transform: rotate(360deg) scale(1.1);
+    }
+
+    .body h1 {
+      font-size: 4rem;
+      color: rgb(232, 171, 27);
+      margin-top: 30px;
+    }
+
+    .body h2 {
+      font-size: 1.5rem;
+      color: rgb(36, 196, 240);
+      margin-top: 10px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 900px) {
+      .body img {
+        width: 70%;
+      }
+
+      .body h1 {
+        font-size: 3rem;
+      }
+
+      .body h2 {
+        font-size: 1.2rem;
+      }
+
+      .links {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .links a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .body h1 {
+        font-size: 2.5rem;
+      }
+
+      .body h2 {
+        font-size: 1rem;
+      }
+
+      .body img {
+        width: 80%;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .body h1 {
+        font-size: 2rem;
+      }
+
+      .body h2 {
+        font-size: 0.9rem;
+      }
+
+      .links a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="links">
+      <a href="./home1.html" target="_blank">Home</a>
+      <a href="./about.html" target="_blank">About Me</a>
+      <a href="./education.html" target="_blank">Education</a>
+      <a href="./contact.html" target="_blank">Contacts</a>
+      <a href="./Internship.html" target="_blank">Projects/Internship</a>
+    </div>
+  </nav>
+
+  <div class="body">
+    <img src="./rajesh.4.jpeg" alt="Rajesh Image">
+    <h1>My Portfolio</h1>
+    <h2>~ Madigubba Rajesh</h2>
+  </div>
+</body>
+</html>

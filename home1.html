@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Oswald", sans-serif;
+      background: linear-gradient(to bottom, rgb(229, 210, 210), rgb(238, 231, 223), rgb(248, 237, 216), rgb(184, 219, 233));
+    }
+
+    /* Navbar */
+    .nav {
+      width: 100%;
+      height: 60px;
+      background-color: beige;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: blue;
+      font-size: 22px;
+      margin: 0 20px;
+    }
+
+    .links a:hover {
+      color: red;
+    }
+
+    /* Main section */
+    .home-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 100px 50px 50px 50px;
+    }
+
+    .home-section img {
+      width: 500px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .home-section img:hover {
+      transform: scale(1.1);
+    }
+
+    .home-content {
+      max-width: 600px;
+      color: darkred;
+    }
+
+    .home-content h1 {
+      color: darkorchid;
+      margin-bottom: 15px;
+    }
+
+    .home-content h2 {
+      color: darkblue;
+      margin-bottom: 20px;
+    }
+
+    .home-content p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 900px) {
+      .home-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .home-content {
+        max-width: 90%;
+      }
+
+      .home-section img {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .home-content p {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .home-content h1 {
+        font-size: 22px;
+      }
+
+      .home-content h2 {
+        font-size: 18px;
+      }
+
+      .home-content p {
+        font-size: 16px;
+      }
+
+      .links a {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/madigubbarajesh/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+      <a href="https://github.com/madigubbarajesh" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+      <a href="https://drive.google.com/file/d/1Q4JnrJ1RcP-aP_Y-rKwarXq0n-NcxJ0I/view?usp=drivesdk" target="_blank">Resume</a>
+    </div>
+  </nav>
+
+  <section class="home-section">
+    <img src="./rajesh1.jpeg" alt="Rajesh photo">
+    <div class="home-content">
+      <h1>Hello, I'm Madigubba Rajesh</h1>
+      <h2>AI & ML Graduate | Aspiring Python Full Stack Developer</h2>
+      <p>
+        I recently completed my B.E. in Artificial Intelligence and Machine Learning from MS Engineering College, Bengaluru (2021–2025).  
+        Currently pursuing a Python Full Stack Development with AI course to enhance my skills in modern web technologies and intelligent systems.  
+        I’m passionate about building smart, user-friendly applications that solve real-world problems.
+      </p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?w=1600&auto=format&fit=crop&q=60');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .overlay {
+      width: 100%;
+      min-height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: rgb(62, 227, 8);
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .contacts a {
+      text-decoration: none;
+      color: rgb(62, 227, 8);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contacts a:hover {
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .contacts i {
+      margin-right: 12px;
+      color: #fff;
+    }
+
+    /* ---------- Responsive Design ---------- */
+
+    /* Large screens */
+    @media screen and (min-width: 1400px) {
+      h2 {
+        font-size: 65px;
+      }
+      .contacts {
+        font-size: 30px;
+      }
+    }
+
+    /* Tablets and small laptops */
+    @media screen and (max-width: 900px) {
+      h2 {
+        font-size: 45px;
+      }
+      .contacts {
+        font-size: 22px;
+        gap: 25px;
+      }
+    }
+
+    /* Mobile screens */
+    @media screen and (max-width: 600px) {
+      h2 {
+        font-size: 32px;
+      }
+      .contacts {
+        font-size: 18px;
+        gap: 20px;
+      }
+    }
+
+    /* Very small screens */
+    @media screen and (max-width: 400px) {
+      h2 {
+        font-size: 26px;
+      }
+      .contacts {
+        font-size: 16px;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <h2>Contact Me</h2>
+
+    <div class="contacts">
+      <a href="mailto:madigubbarajesh@gmail.com" target="_blank"><i class="fas fa-envelope"></i> madigubbarajesh@gmail.com</a>
+      <a href="tel:9398711348"><i class="fas fa-phone"></i> <i class="fa-brands fa-whatsapp"></i> 9398711348</a>
+      <a href="https://www.instagram.com/madigubbarajesh_7" target="_blank"><i class="fa-brands fa-instagram"></i> madigubbarajesh_7</a>
+      <a href="https://x.com/MadigubbaRajesh" target="_blank"><i class="fab fa-x-twitter"></i> MadigubbaRajesh</a>
+    </div>
+  </div>
+
+</body>
+</html>
